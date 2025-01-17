@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yardım Sayfası | Bilet Sistemi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('https://source.unsplash.com/1920x600/?help,travel') no-repeat center center/cover;
+            color: rgb(17, 17, 17);
+            padding: 150px 20px;
+            text-align: center;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+        .footer {
+            background-color: #212529;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #adb5bd;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Bilet Sistemi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkimizda.html">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="yardim.html">Yardım</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Yardım Sayfası</h1>
+            <p class="lead">Bilet satın alma, rezervasyon ve diğer işlemlerle ilgili tüm sorularınıza buradan yanıt bulun.</p>
+        </div>
+    </div>
+
+    <!-- Help Topics -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Sıkça Sorulan Sorular</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Bilet Satın Alma</h5>
+                        <p class="card-text">Bilet satın alma süreci hakkında adım adım rehber için <a href="#">tıklayın</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Rezervasyon İptali</h5>
+                        <p class="card-text">Rezervasyon iptali ve değişiklik politikaları hakkında bilgi alın.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Ödeme Güvenliği</h5>
+                        <p class="card-text">Online ödeme işlemlerinizin güvenliği için sıkı önlemler alıyoruz. Daha fazlası için tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Müşteri Hizmetleri</h5>
+                        <p class="card-text">Canlı destek ve müşteri hizmetleriyle iletişim kurmak için tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Seyahat Bilgileri</h5>
+                        <p class="card-text">Seyahat güncellemeleri ve kurallar hakkında bilgi alın.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Uygulama Kullanımı</h5>
+                        <p class="card-text">Mobil uygulama ile işlemlerinizi kolayca yapın. Daha fazla bilgi için tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Bilet Sistemi. Tüm hakları saklıdır.</p>
+            <a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Şartları</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
