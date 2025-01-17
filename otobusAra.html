@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obilet Navbar ve Seçim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/datepicker@1.0.10/dist/css/datepicker.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid">
+
+                <a class="navbar-brand mx-auto" href="#">  
+                    <img src="obilet.jpg" alt="Obilet Logo" width="100">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <img src="trky.png" alt="TR Icon" width="20" class="me-2">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TRY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Yardım</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Seyahat Sorgula</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Üye Girişi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-light py-3">
+            <div class="container text-center">
+                <a href="#" class="mx-3">
+                    <i class="bi bi-bus fs-3"></i>
+                    Otobüs
+                </a>
+                <a href="#" class="mx-3">
+                    <i class="bi bi-airplane-engines fs-3"></i>
+                    Uçak
+                </a>
+                <a href="#" class="mx-3">
+                    <i class="bi bi-building fs-3"></i>
+                    Otel
+                </a>
+                <a href="#" class="mx-3">
+                    <i class="bi bi-ferry fs-3"></i>
+                    Feribot
+                </a>
+                <a href="#" class="mx-3">
+                    <i class="bi bi-car-front fs-3"></i>
+                    Araç
+                </a>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <form>
+                <div class="grid text-center">
+                    <div class="g-col-4">
+                        <div class="form-group">
+                            <label for="departure">Nereden</label>
+                            <input type="text" class="form-control" id="departure" placeholder="Kalkış">
+                            <div id="departure-error" class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="g-col-4">
+                        <div class="form-group">
+                            <label for="arrival">Nereye</label>
+                            <input type="text" class="form-control" id="arrival" placeholder="Varış">
+                            <div id="arrival-error" class="invalid-feedback"></div>
+                        </div>
+                        <div class="g-col-4">
+                        <div class="form-group">
+                            <label for="date">Tarih Seçiniz</label>
+                            <input type="date" class="form-control" id="date" name="date">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        
+</body>
+
+</html>
