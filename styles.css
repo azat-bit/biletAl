@@ -1,0 +1,79 @@
+/* Genel Sayfa Stilleri */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık Stili */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Tablo Stili */
+.table {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablo Başlıkları */
+th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+/* Tablo Satırları */
+td {
+    text-align: center;
+}
+
+/* Satır Hover Efekti */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tablo Kenarlıkları */
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .table thead {
+        display: none; /* Başlıkları gizle */
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+}
