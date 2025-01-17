@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seyahat Sorgulama Formu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+      <a class="navbar-brand" href="#">Seyahat Sorgulama</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="seyahatsorugula.html">Seyahat Sorgulama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TRY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Yardım</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5" id="form">
+    <div class="row">
+
+      <div class="col-md-6 ps-3 mb-4">
+        <h2 class="text-center mb-4">Biletlerinizi Görmek İçin Üye Girişi Yapın</h2>
+        <div class="d-grid gap-2 mb-4">
+          <button class="btn btn-primary">Facebook ile Giriş Yap</button>
+          <button class="btn btn-danger">Google ile Giriş Yap</button>
+        </div>
+
+        <form>
+          <div class="mb-3">
+            <label for="uye-email" class="form-label">E-posta Adresi</label>
+            <input type="email" class="form-control" id="uye-email" placeholder="E-posta adresinizi girin" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="uye-sifre" class="form-label">Şifre</label>
+            <input type="password" class="form-control" id="uye-sifre" placeholder="Şifrenizi girin" required>
+          </div>
+
+          <div class="mb-3">
+            <a href="#" class="text-muted">Şifrenizi mi Unuttunuz?</a>
+          </div>
+
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+          </div>
+        </form>
+
+        <p class="text-center">Henüz üye değil misiniz? <a href="#">Üye Olun</a></p>
+      </div>
+
+      <div class="col-md-6 ps-3 mb-4">
+        <h2 class="text-center mb-4">Biletinizi Sorgulayın</h2>
+
+        <div class="mb-3">
+          <label class="form-label">Seyahat Türü</label>
+          <div class="row">
+            <div class="col-2">
+              <button type="button" class="btn btn-outline-danger w-100">Otobüs</button>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-outline-danger w-100">Uçak</button>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-outline-danger w-100">Otel</button>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-outline-danger w-100">Araç</button>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-outline-danger w-100">Feribot</button>
+            </div>
+          </div>
+        </div>
+
+        <h5 class="text-center mb-4">PNR Numaranız ile Biletinizi Sorgulayın</h5>
+
+        <form>
+          <div class="mb-3">
+            <label for="firma-adi" class="form-label">Firma Adı</label>
+            <input type="text" class="form-control" id="firma-adi" placeholder="Firma adını yazınız" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="pnr-numara" class="form-label">PNR Numaranız</label>
+            <input type="text" class="form-control" id="pnr-numara" placeholder="PNR numaranızı girin" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email-telefon" class="form-label">Cep Telefonu veya E-mail</label>
+            <input type="text" class="form-control" id="email-telefon" placeholder="Cep telefonunuzu veya E-mail adresinizi girin" required>
+          </div>
+
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary w-100">Biletimi Sorgula</button>
+          </div>
+        </form>
+
+        <div class="text-muted">
+          <small>PNR numaranızı bulmak için onay e-mail veya Cep telefonunuzu kontrol ediniz. PNR kodunuzu bulamıyor musunuz?</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <footer class="bg-danger text-white py-4 mt-3">
+    <div class="container text-center">
+      <p>&copy; 2023 Seyahat Sorgulama Formu. Tüm hakları saklıdır.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-white">Kullanım Koşulları</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Gizlilik Politikası</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">İletişim</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Destek</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Kampanya</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Hakkımızda</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Yardım</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
